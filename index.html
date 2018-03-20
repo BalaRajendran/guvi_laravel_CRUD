@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Library Registration</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="Designer" content="Balaji R">  
+	<meta name="googlebot" content="INDEX, FOLLOW">
+<meta name="googlebot-news" content="nosnippet">
+   <meta name="description" content=""/>
+	<meta property="og:image" content="">
+<meta property="og:url" content="">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<script type="text/javascript">
+document.oncontextmenu = function() {
+       alert("Context Menu Disabled");
+    return false;
+    }
+</script>
+</head>
+<body oncontextmenu="return false">
+    <div id="background"></div>
+    <div id="midground"></div>
+    <div id="foreground"></div>
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+				<span class="contact100-form-title">
+					Library Feedback
+				</span>
+			<form id="myForm" class="contact100-form validate-form" action="add_registration.php" method="POST">
+				<center><span style="color:red;" id="error"></span></center>
+				<span class="contact100-form-title">				</span>	
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: abc@gmail.com">
+					<span class="label-input100">Email</span>
+					<input class="input100" type="text" name="email" placeholder="Enter your email address">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="Feedback is required">
+					<span class="label-input100">Feedback</span>
+					<input class="input100" type="text"  style="height:50px;"  name="feed" placeholder="Enter Your sugestion">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Please enter the captcha">
+					<span class="label-input100">Captcha</span>
+						<input type="text"  class="input100" name="cap" placeholder="Please enter the captcha">
+					<span class="focus-input100"></span>
+				</div> 
+				 <img src="captcha_code_file.php?rand=<?php echo rand();?>" id='captchaimg' width="40%"><br/><br/>
+				  Can't read the image? click <a href='javascript: refreshCaptcha();' style="color:#F00;">here</a> to refresh
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button id="sub" class="contact100-form-btn">
+							<span>
+								Submit
+								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+							</span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>  
+	<div id="dropDownSelect1"></div>
+	 <div id="background"></div>
+    <div id="midground"></div>
+    <div id="foreground"></div>
+	        <div class="foo">
+		<center>Copyrights © 2017,College of Engineering,Karur</center>
+		<center><a href="http://localhost:8000/">Admin Login</a></center>
+			<center><img src="http://hitwebcounter.com/counter/counter.php?page=6878274&style=0006&nbdigits=4&type=page&initCount=0" title="Page Visitors Counter" Alt="Home Remedies For Wrinkles"   border="0" ></center>
+    </div>
+    					<script type='text/javascript'>
+		function refreshCaptcha()
+		{
+			var img = document.images['captchaimg'];
+			img.src = img.src.substring(0,img.src.lastIndexOf("?"))+"?rand="+Math.random()*1000;
+		}
+	</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/insert.js"></script>
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="vendor/animsition/js/animsition.min.js"></script>
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/select2/select2.min.js"></script>
+<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+</script>
+<script src="vendor/daterangepicker/moment.min.js"></script>
+<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<script src="vendor/countdowntime/countdowntime.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
